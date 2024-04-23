@@ -15,5 +15,7 @@ btnTodoInsert.addEventListener("click", function(){
 
 // TODO select
 btnTodoSelect.addEventListener("click", function(){
-
+  const todoListStr = localStorage.getItem("todo");
+  const todoList = JSON.parse(todoListStr);
+  console.log("로컬스토리지에서 가져온 todoList : ", todoList);
 });
