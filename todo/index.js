@@ -17,5 +17,18 @@ btnTodoInsert.addEventListener("click", function(){
 btnTodoSelect.addEventListener("click", function(){
   const todoListStr = localStorage.getItem("todo");
   const todoList = JSON.parse(todoListStr);
-  console.log("로컬스토리지에서 가져온 todoList : ", todoList);
+
+  // todoList를 화면에 보여주기
+  const todoListArea = document.querySelector("#todo-list-area"); //결과물 붙일 영역
+  
+  // 화면 정리하기 (기존TODO)
+  todoListArea.innerHTML = "";
+
+  // TODO 만들고, todoListArea에 붙이기
+  for(const x of todoList){
+    const divTag = document.createElement("div");
+    const todoText = document.createTextNode(x);
+    divTag.appendChild(todoText);
+    todoListArea.appendChild(divTag);
+  }
 });

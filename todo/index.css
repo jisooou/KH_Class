@@ -26,8 +26,8 @@ body{
 #enroll-area > button{
   width: 90%;
   height: 50%;
-  border: 2px solid black;
-  background-color: rgb(98, 216, 245);
+  border: 2px solid rgb(76, 122, 240);
+  background-color: rgb(167, 236, 253);
   border-radius: 20px;
 }
 
