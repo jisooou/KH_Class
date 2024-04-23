@@ -1,0 +1,166 @@
+.box{
+  width: 100px;
+  height: 100px;
+  background-color: lightgray;
+  border: 1px solid black;
+}
+
+#target{
+  /* transform: translateX(300px); */
+
+
+  /* 
+  transition-property: all;
+  transition-duration: 2s;
+  transition-delay: 1s;
+  transition-timing-function: cubic-bezier(); 
+  */
+
+  /* 위 코드를 한번에 작성하는 법 (아래와 같다) */
+  /* transition: all 2s 1s cubic-bezier(); */
+
+  /* 
+  transition-duration: 2s;
+  transition-delay: 1s;
+  transition-timing-function: cubic-bezier(.22, .71, .46, -0.89); 
+  */
+
+  animation-name: hello2;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  /* linear : 일정한 속도로 움직임 */
+  animation-timing-function: linear;
+
+  /* animation-iteration-count: infinite; */
+  /* animation-iteration-count: 4; */
+  animation-iteration-count: 50;
+
+  /* animation-direction: reverse; */
+  /* animation-direction: alternate; */
+  animation-direction: normal;
+  
+  animation-fill-mode: both;
+
+  /* 애니메이션 자동 반복 */
+  animation-play-state: running;
+
+  /* 진행하다가 멈춤 */
+  /* animation-fill-mode: forwards; */
+  /* animation-fill-mode: backwards; */
+}
+
+/* hover하는 순간에 정지된다 */
+#target:hover{
+  animation-play-state: paused;
+}
+
+/* 애니메이션 만들기 */
+@keyframes hello{
+  0%{
+    background-color: red;
+    width: 300px;
+    height: 300px;
+  }
+  50%{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+  }
+  100%{
+    background-color: green;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+
+
+#t{
+  animation-name: abc;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#t:hover{
+  animation-play-state: paused;
+}
+
+@keyframes abc{
+  0%{
+
+  }
+  100%{
+    transform: rotateZ(360deg);
+  }
+}
+
+
+
+.btn-jelly:hover{
+  background-color: rgb(115, 196, 239);
+  border-radius: 10px;
+  border-width: 0px;
+
+  animation-name: jelly;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes jelly{
+  0%{
+    background-color: rgb(134, 200, 247);
+    transform: scale(0.8, 1.2);
+  }
+  50%{
+    background-color: rgb(104, 121, 199);
+    transform: scale(1.2, 0.9);
+  }
+  100%{
+    background-color: rgb(8, 127, 230);
+    transform: scale(0.5, 1.3);
+  }
+}
+
+
+
+#back-v:hover{
+  transform: rotateX(180deg);
+  transition: 2s;
+  backface-visibility: hidden;
+}
+
+
+
+#card{
+  width: 80px;
+  height: 100px;
+  border: 5px solid black;
+  box-sizing: border-box;
+  margin: 50px;
+  position: relative;
+}
+
+#card > div{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#card:hover > div{
+  transform: rotateX(180deg);
+}
+
+#front{
+  background-color: rgb(109, 197, 244);
+  backface-visibility: hidden;
+}
+
+#back{
+  background-color: rgb(25, 82, 187);
+  z-index: -1;
+  /* 
+  transform: rotateX(180deg);
+  backface-visibility: hidden; 
+  */
+}

@@ -1,0 +1,18 @@
+.title input{
+  width: 250px;
+}
+
+.content input{
+  width: 250px;
+  height: 150px;
+}
+
+.content input::placeholder{
+  position: relative;
+  top: -70px;
+}
+
+.write{
+  position: relative;
+  left: 150px;
+}

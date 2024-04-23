@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>연습장</title>
+
+  <link rel="stylesheet" href="./연습장.css">
+  <script src="./연습장.js"></script>
+</head>
+<body>
+
+  <form action="로그인요청을받아주는서버주소" onsubmit="return false">
+    <input type="text" name="memberId" placeholder="아이디">
+    <br>
+    <input type="password" name="memberPwd" placeholder="비밀번호">
+    <br>
+    <input type="submit" value="로그인" onclick="return f01()">
+  </form>
+  
+</body>
+</html>
+
+<script>
+  function f01(){
+    return false;
+  }
+</script>

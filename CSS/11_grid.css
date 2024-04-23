@@ -1,0 +1,84 @@
+div{
+  border: 3px solid rgb(247, 95, 95);
+  box-sizing: border-box;
+}
+
+#outer{
+  border: 5px dashed black;
+  width: 800px;
+  height: 800px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 100px 150px 150px 80px 100px;
+  /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+  /* grid-template-rows: 400px 400px; */
+  /* grid-template-rows: 100px 100px 1fr 1fr; */
+  grid-template-rows: repeat(2, 100px 150px);
+
+  /* justify-items: stretch; */
+  justify-items: center;
+  /* align-items: stretch; */
+  align-items: stretch;
+
+  /* justify-items + align-items = place-items */
+  place-items: center center;
+
+  /* column-gap: 30px; */
+  /* row-gap: 30px; */
+
+  /* gap: 30px 30px; */
+
+  justify-content: center;
+  align-content: center;
+
+  /*justify-content + align-content = place-content */
+  /* place-content: center center; */
+  place-content: space-between space-between;
+
+  grid-auto-flow: row;
+}
+
+#t02{
+  /* grid-column: span 2; */
+  /* grid-row: span 2; */
+
+  /* grid-column-start: 2; */
+  /* grid-column-end: 3; */
+
+  /* 위 코드를 간소화하면 다음과 같이 쓸 수 있다. */
+  /* grid-column: 2/4; */
+
+  /* order를 이용해서 순서를 다르게 한다. */
+  /* order: 3; */
+
+  /* 본인 혼자만 정렬방식을 다르게 한다. */
+  place-self: stretch stretch;
+}
+
+
+/* 개인 연습용 */
+#box{
+  border: 1px solid black;
+  width: 500px;
+  height: 500px;
+
+  display: grid;  
+  grid-template-columns:  100px 100px 100px 100px 100px;
+
+  margin: auto;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: start;
+
+
+}
+.square{
+  border: 1px solid black;
+  width: 80px;
+  height: 80px;
+  background-color: aquamarine;
+}

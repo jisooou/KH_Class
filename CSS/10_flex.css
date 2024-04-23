@@ -1,0 +1,97 @@
+#div00{
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  box-sizing: border-box;
+
+  display: flex;
+  /* justify-content: center; */
+  /* justify-content: start; */
+  /* justify-content: end; */
+  justify-content: space-evenly;
+  /* align-items: center; */
+  align-items: start;
+
+  /* 중심축이 그대로 x축이 된다. */
+  /* flex-direction: row; */
+  /* 중심축이 y축으로 쌓이게 된다. */
+  flex-direction: column;
+  
+  /* 자식에서 display랑 float를 주지 않고 부모에 주기만 해도 옆으로 배치 가능. */
+  /* display: flex; */
+  
+  /* 똑같은 여백을 가지고 배치가 된다. */
+  /* 중심축을 기준으로 동작한다. (justify-content) */
+  /* justify-content: space-between; */
+  /* justify-content: left; */
+  /* justify-content: right; */
+  /* justify-content: center; */
+  /* justify-content: space-evenly; */
+  /* justify-content: space-around; */
+
+  /* flex-wrap: wrap; */
+
+  /* 교차축을 기준으로 동작한다. (align-items) */
+  /* align-items: center; */
+  /* align-items: end; */
+  /* align-content: center; */
+}
+
+
+#div00 > div{
+  width: 30%;
+  height: 30%;
+  background-color: gray;
+  border: 3px solid rgb(42, 134, 199);
+  box-sizing: border-box;
+
+  /* display, float 둘 중 하나 이용하면 된다. */
+  /* display: inline-block; */
+  /* float: left; */
+}
+
+
+
+#outer{
+  width: 200px;
+  height: 200px;
+  border: 3px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#target{
+  width: 50%;
+  height: 50%;
+  background-color: gray;
+
+  /* text-align: start; */
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* 개인 연습용 */
+#one{
+  width: 400px;
+  height: 400px;
+  background-color: lightblue;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#child{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

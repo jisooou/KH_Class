@@ -1,0 +1,65 @@
+.title input{
+  width: 280px;
+}
+
+.content input{
+  width: 280px;
+  height: 150px;
+}
+
+.content input::placeholder{
+  position: relative;
+  top: -63px;
+}
+
+.write{
+  position: relative;
+  left: 150px;
+}
+
+.header{
+  background-color: #FFA07A;
+  color: white;
+}
+
+.footer{
+  background-color: #FFA07A;
+  color: white;
+  text-align: center;
+}
+
+.body{
+  background-color: #FFFFE0;
+}
+
+.second{
+  width: 100%
+}
+
+.go{
+  width: 60px;
+}
+
+.number{
+  width: 40px;
+}
+
+.whiteTitle{
+  width: 400px;
+}
+
+.boardWriter{
+  width: 150px;
+}
+
+.boardDate{
+  width: 150px;
+}
+
+.goodNumber{
+  width: 60px;
+}
+
+.go input[type="button"]{
+  width: 80px;
+}

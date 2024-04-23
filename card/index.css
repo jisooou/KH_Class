@@ -1,0 +1,26 @@
+body{
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  place-items: center center;
+}
+
+div{
+  background-image: url('https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/cnoC/image/8Ql-wYAJmiMkSg4gvS6zhMewDg4.JPEG');
+}
+
+.card{
+  width: 60%;
+  height: 80%;
+  border: 2px solid black;
+}
+
+.card.hide{
+  visibility: hidden;
+}

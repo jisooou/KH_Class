@@ -1,0 +1,94 @@
+h1{
+  background-color: red;
+}
+
+
+/* 
+type값으로 작성
+input[type="text"]{
+  background-color: red;
+} 
+*/
+/* name값으로 작성 */
+input[name="userId"]{
+  background-color: red;
+}
+
+
+input[type="password"]{
+  background-color: aquamarine;
+}
+
+
+#userPwdLable{
+  color: red;
+}
+
+
+#test01{
+  border: 5px solid black;
+}
+
+
+/* 자식만 */
+#test01 > h4{
+  color: blue;
+}
+
+
+/* 자손 모두 */
+#test01 h4{
+  color: black;
+}
+
+
+#test01 li{
+  color: blue;
+}
+/* 
+아래와 같이 작성해도 된다.
+#test01 > ul > li{
+  color: blue;
+*/
+
+
+#target{
+  color: blue;
+}
+
+#target + div{
+  color: blue;
+}
+
+#target ~ div{
+  color: blue;
+}
+
+
+#active-text:active{
+  background-color: blue;
+}
+
+#hover-test:hover{
+  background-color: green;
+}
+
+
+input[type="checkbox"]:checked{
+  width: 100px;
+  height: 100px;
+}
+
+
+#abc:focus{
+  background-color: aqua;
+}
+
+
+input[type="button"]{
+  background-color: violet;
+}
+input[type="button"]:disabled{
+  background-color: blueviolet;
+}
+

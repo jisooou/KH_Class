@@ -1,0 +1,18 @@
+table, tr, td, th{
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+
+table{
+  width: 300px;
+}
+
+th:nth-child(1), td:nth-child(1){
+  background-color: red;
+}
+th:nth-child(2), td:nth-child(2), td:nth-child(5), td:nth-child(8){
+  background-color: blue;
+}
+th:nth-child(3), td:nth-child(3), td:nth-child(6), td:nth-child(9){
+  background-color: green;
+}

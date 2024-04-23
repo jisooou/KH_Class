@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>연습문제2_표태그</title>
+
+  <style>
+    #a{
+      color: white;
+      background-color: pink;
+    }
+
+    #b{
+      background-color: yellow;
+    }
+
+    #c{
+      color: blue;
+      background-color: orangered;
+    }
+
+    #button{
+      background-color: lightblue;
+      color: white;
+    }
+    
+    caption{
+      color: red;
+      font-weight: bolder;
+      font-size: x-large;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>연습문제2_표태그</h1>
+
+  <table border="1">
+    <caption>KH 정보교육원 강의</caption>
+    <tr id="a">
+      <th>관</th>
+      <th>강의장</th>
+      <th>인원수</th>
+      <th>강사명</th>
+    </tr>
+    <tr id="b">
+      <td rowspan="6">1관</td>
+      <td rowspan="2">D강의장</td>
+      <td rowspan="2">30명</td>
+      <td>오전 : 심원용
+        <input type="submit" value="신청하기" id="button">
+      </td>
+    </tr>
+    <tr id="b">
+      <td>오후 : 심원용
+        <input type="submit" value="신청하기" id="button">
+      </td>
+    </tr>
+    <tr id="b">
+      <td rowspan="2">S강의장</td>
+      <td rowspan="2">25명</td>
+      <td>오전 : 심투용
+        <input type="submit" value="신청하기" id="button">
+      </td>
+    </tr>
+    <tr id="b">
+      <td>오후 : 심투용
+        <input type="submit" value="신청하기" id="button">
+      </td>
+    </tr>
+    <tr id="b">
+      <td rowspan="2">T강의장</td>
+      <td rowspan="2">20명</td>
+      <td>오전 : 심삼용
+        <input type="submit" value="신청하기" id="button">
+      </td>
+    </tr>
+    <tr id="b">
+      <td>오후 : 심삼용
+        <input type="submit" value="신청하기" id="button">
+      </td>
+    </tr>
+    <tr id="c">
+      <th colspan="4"><strong>많은 신청바랍니다.</strong></th>
+    </tr>
+  
+</table>
+
+</body>
+</html>

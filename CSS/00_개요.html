@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS 개요</title>
+
+  <style>
+
+    /*
+    h1에 id를 (abc로) 주지 않았을 때  
+    h1{
+      color: blanchedalmond;
+      background-color: lightblue;
+
+    } 
+    */
+
+    /* 
+    h1에 id를 abc로 주었을 때 
+    #abc{
+      color: darkgreen;
+      background-color: lightgreen;
+    } 
+    */
+
+    /* h1에 class를 (hello로) 주었을 때 */
+    .hello{
+      color: plum;
+      background-color: aquamarine;
+    }
+
+    /* 
+    #target:nth-child(1){
+      background-color: red;
+    } 
+    */
+
+    #target > div:nth-child(3){
+      background-color: lightgreen;
+    }
+
+    #target > h4:nth-child(8){
+      background-color: bisque;
+    }
+
+    /* :nth 앞에를 굳이 써주지 않아도 된다.*/
+    #target > :nth-child(5){
+      background-color: aquamarine;
+    }
+
+    #target > :first-child{
+      background-color: blueviolet;
+    }
+
+    #target > :last-child{
+      background-color: brown;
+    }
+
+    /* (2의)배수를 뽑고 싶을 때 */
+    #target > :nth-child(2n){
+      background-color: lightpink;
+    }
+
+    /* 짝수를 뽑고 싶을 때 */
+    #target > :nth-child(even){
+      background-color: lightpink;
+    }
+    /* 홀수를 뽑고 싶을 때는 'odd' */
+
+
+    /* 콤마(,)를 통해서 이어줄 수 있다. */
+    #abc, #hello, #target{
+      background-color: lightseagreen;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <!-- 
+  <h1>CSS 개요</h1>
+  <h1 id="abc">CSS 개요</h1>
+  -->
+  <h1 class="hello">CSS 개요</h1>
+
+  <div id="target">
+    <div>일</div>
+    <div>이</div>
+    <div>삼</div>
+    <div>사</div>
+    <div>오</div>
+    <h4>원</h4>
+    <h4>투</h4>
+    <h4>쓰리</h4>
+    <h4>포</h4>
+    <h4>파이브</h4>
+  </div>
+
+  
+</body>
+</html>

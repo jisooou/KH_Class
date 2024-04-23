@@ -1,0 +1,26 @@
+body{
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr;
+}
+
+#side{
+  background-color: lightgray;
+  width: 100%;
+  height: 100%;
+  margin-left: -90%;
+  transition: 0.5s;
+}
+
+/* hover시 사이드바 나오게 하기 */
+/* #side:hover{
+  margin-left: 0px;
+  /* transition: 0.5s;
+} */ 
+
+#side.active{
+  margin-left: 0px;
+}
